@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Swan Htet Aung — Portfolio</title>
+  <meta name="description" content="Software Engineer (Intern) portfolio: JavaFX, YOLOv8, Flutter, Web." />
+  <meta property="og:title" content="Swan Htet Aung — Portfolio" />
+  <meta property="og:description" content="Projects: AU Connect, Attendance Manager (JavaFX), YOLOv8 Fruit Detector, more." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og-image.png" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="icon" href="/favicon.ico" />
+  <style>
+    :root{--bg:#0b0f17;--card:#111827;--muted:#9ca3af;--text:#f9fafb;--brand:#22d3ee;--accent:#60a5fa}
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%;scroll-behavior:smooth}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;background:radial-gradient(80rem 80rem at 10% -10%,#121b2f,transparent),linear-gradient(180deg,#0b0f17, #0b0f17);color:var(--text)}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{position:sticky;top:0;background:rgba(11,15,23,.7);backdrop-filter:blur(8px);z-index:50;border-bottom:1px solid rgba(255,255,255,.06)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .nav a{margin:0 8px;color:var(--muted)}
+    .nav a.active,.nav a:hover{color:#fff}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--brand));color:#0b0f17;font-weight:600;border:none}
+    .btn:hover{filter:brightness(1.05);cursor:pointer}
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center;padding:60px 0}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:24px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    h1{font-size:44px;line-height:1.05;margin:0 0 10px}
+    .subtitle{color:var(--muted);font-size:18px}
+    .badges{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}
+    .badge{border:1px solid rgba(255,255,255,.14);color:#e5e7eb;padding:6px 10px;border-radius:9999px;font-size:12px}
+    .grid{display:grid;gap:16px}
+    .projects{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .project:hover{transform:translateY(-4px);transition:.25s ease}
+    .project h3{margin:8px 0 6px}
+    .muted{color:var(--muted)}
+    .section{padding:36px 0}
+    .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+    .kpi{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:14px;text-align:center}
+    footer{border-top:1px solid rgba(255,255,255,.06);padding:24px 0;color:var(--muted)}
+    .list{display:grid;gap:10px}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}.projects{grid-template-columns:1fr 1fr}.two-col{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div style="display:flex;align-items:center;gap:10px">
+        <div style="width:10px;height:10px;border-radius:99px;background:linear-gradient(135deg,var(--accent),var(--brand))"></div>
+        <strong>Swan Htet Aung</strong>
+      </div>
+      <nav>
+        <a href="#projects" class="active">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card">
+        <h1>Software Engineer(Intern)</h1>
+        <p class="subtitle">Final‑year Computer Engineering student in Thailand. Building useful things with <strong>Java / JavaFX</strong>, <strong>Flutter</strong>, <strong>Python</strong>,and <strong>web</strong>.</p>
+        <div class="badges">
+          <span class="badge">Java • JavaFX • SQL</span>
+          <span class="badge">Python • PyTorch • YOLOv8</span>
+          <span class="badge">Flutter • MongoDB</span>
+          <span class="badge">HTML • CSS • JS</span>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn" href="Resume_SwanHtetAung.pdf" target="_blank" rel="noopener">Download Résumé</a>
+          <a class="btn" href="mailto:hello@swan.dev">Contact</a>
+        </div>
+        <div class="kpis">
+          <div class="kpi"><div style="font-size:22px;font-weight:800">6+ </div><div class="muted">Projects</div></div>
+          <div class="kpi"><div style="font-size:22px;font-weight:800">3x </div><div class="muted">Student Honours List</div></div>
+          <div class="kpi"><div style="font-size:22px;font-weight:800">69 → 62 kg </div><div class="muted">Fitness Discipline</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <img alt="Hero mockup" src="MyPhoto1.jpg" style="width:100%;border-radius:12px;border:1px solid rgba(255,255,255,.08)"/>
+        <p class="muted" style="margin:8px 0 0">Tip: replace <code>hero.png</code> with a project collage or headshot.</p>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Featured Projects</h2>
+      <div class="grid projects">
+        <article class="card project">
+          <div class="muted">Web · Flutter</div>
+          <h3>AU Connect — Student Social Platform</h3>
+          <p>Instagram‑style app for clubs & groups at university. Feed, posts, join requests, and basic moderation.</p>
+          <ul class="list">
+            <li>Flutter mobile + Web; Firebase Auth/Firestore.</li>
+            <li>Role‑based feeds and club discovery.</li>
+          </ul>
+          <div class="muted">Repo / Demo links</div>
+        </article>
+        <article class="card project">
+          <div class="muted">Desktop · JavaFX</div>
+          <h3>Attendance Management (JavaFX)</h3>
+          <p>Student & teacher views, login, and SQL Server backend. Clean FXML UI with role‑based navigation.</p>
+          <ul class="list">
+            <li>Tech: Java, JavaFX (FXML), JDBC, SQL Server.</li>
+            <li>Focus: UX, DB schema, secure auth.</li>
+          </ul>
+          <div class="muted">Repo / Screenshots</div>
+        </article>
+        <article class="card project">
+          <div class="muted">AI/ML · Computer Vision</div>
+          <h3>YOLOv8 Fruit Detector</h3>
+          <p>Custom dataset (10–15 classes) trained on Colab; real‑time inference in VS Code using webcam.</p>
+          <ul class="list">
+            <li>Metrics: mAP50 ~0.75 on validation.</li>
+            <li>Tech: Ultralytics, PyTorch, OpenCV.</li>
+          </ul>
+          <div class="muted">Repo / Demo video</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section two-col">
+      <div class="card">
+        <h3>Skills</h3>
+        <ul class="list">
+          <li><strong>Languages:</strong> Java, Python, JavaScript, Dart, SQL</li>
+          <li><strong>Frameworks:</strong> JavaFX, Flutter, Node.js, Streamlit</li>
+          <li><strong>ML/CV:</strong> PyTorch, Ultralytics YOLOv8, OpenCV</li>
+          <li><strong>DB/Cloud:</strong> MySQL, SQL Server, Firebase</li>
+          <li><strong>Tools:</strong> Git, GitHub, VS Code, IntelliJ</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>What I'm looking for</h3>
+        <p class="muted">Software Engineer Internship — to ship real features, learn code review, CI/CD, and collaborate across product & design.</p>
+        <ul class="list">
+          <li>Open to backend, frontend, or full‑stack.</li>
+          <li>Based in Thailand; remote‑friendly.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="experience" class="section two-col">
+      <div class="card">
+        <h3>Experience</h3>
+        <ul class="list">
+          <li><strong>Freelance Web Fixes</strong> — HTML/CSS troubleshooting and small features.</li>
+          <li><strong>Academic Projects</strong> — multiple course projects in SE, networking, and IoT.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Achievements</h3>
+        <ul class="list">
+          <li>Student Honours List (2022-2025)</li>
+          <li>Top projects showcased in class demos</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="education" class="section two-col">
+      <div class="card">
+        <h3>Education</h3>
+        <p><strong>B.Eng. Computer Engineering</strong> — Thailand<br/><span class="muted">Graduating 2025</span></p>
+      </div>
+      <div class="card">
+        <h3>Certs & Courses</h3>
+        <ul class="list">
+          <li>Machine Learning basics, Python for Data Science</li>
+          <li>Agile & Scrum fundamentals</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="card">
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:swanhtetaung@example.com">swanhtetaung@example.com</a> • GitHub: <a href="https://github.com/your-handle" target="_blank" rel="noopener">your-handle</a> • LinkedIn: <a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">your-handle</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © <span id="y"></span> Swan Htet Aung. Built with vanilla HTML/CSS. Fast, simple, and deployable anywhere.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear()
+  </script>
+  
+  <!-- Simple structured data for better SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Swan Htet Aung",
+    "jobTitle": "Software Engineer (Intern)",
+    "url": "https://your-domain-here",
+    "sameAs": [
+      "https://github.com/your-handle",
+      "https://www.linkedin.com/in/your-handle"
+    ]
+  }
+  </script>
+</body>
+</html>
